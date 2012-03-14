@@ -1,0 +1,11 @@
+FLTHDR
+
+	Utility to view and modify bFLT file properties.
+
+READBFLT
+	
+	Like readelf, but for bFLT files. Provides a bit more info on relocation and global offset tables than flthdr.
+
+BFLTLDR
+	
+	A bFLT v4 loader for IDA Pro. If the bFLT file is compressed, first decompress it with flthdr before loading into IDA.
