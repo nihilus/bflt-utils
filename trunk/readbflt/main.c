@@ -23,6 +23,9 @@ int main(int argc, char *argv[])
 	char *filename = NULL, *print_string = NULL, *flags_string = NULL;
 	int i = 0, c = 0, retval = EXIT_FAILURE, show_gots = 0, show_relocs = 0, got_count = 0, reloc_count = 0;
 
+	fprintf(stderr, "\nReadbflt v0.1\n");
+    	fprintf(stderr, "Copyright (c) 2012, Tactical Network Solutions, Craig Heffner <cheffner@tacnetsol.com>\n\n");
+
 	if(argc == 1)
 	{
 		usage(argv[0]);
@@ -224,7 +227,6 @@ char *truncate_text(char *string)
 
 void usage(char *appname)
 {
-	fprintf(stderr, "\n");
 	fprintf(stderr, "Usage: %s [OPTIONS] <file>\n", appname);
 	fprintf(stderr, "\n");
 	
