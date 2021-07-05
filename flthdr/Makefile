@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -g -O2
+CFLAGS=-Wall -g -O2 -I/usr/include/libiberty
 LDFLAGS=-lz -lc -lbfd -liberty
 TARGET=flthdr
 
